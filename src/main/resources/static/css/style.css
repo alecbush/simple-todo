@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+#app {
+  width: 100%;
+  max-width: 500px;
+  margin: 100px auto;
+  padding: 25px;
+  border: 1px solid #696969;
+  box-shadow: 16px 16px 8px #c9c9c9;
+}
+
+#app .title {
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+}
+
+#addTask {
+  padding: 10px;
+  width: 100%;
+  font-family: 'Comfortaa', cursive;
+  border: 1px solid #696969;
+}
+
+#taskList {
+  padding: 0;
+}
+
+#taskList li {
+  list-style: none;
+  position: relative;
+  display: block;
+  border-bottom: 1px solid #e8e8e8;
+  line-height: 30px;
+  word-break: break-word;
+}
+
+#taskList li .task {
+  font-family: 'Comfortaa', cursive;
+  width: 90%;
+  display: block;
+}
+
+#taskList li .task:hover {
+  cursor: pointer;
+}
+
+#taskList li .task.complete {
+  text-decoration: line-through;
+}
+
+#taskList li span.delete {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 600px) {
+
+  #app {
+    max-width: 100%;
+    min-width: 300px;
+    margin: 25px auto;
+    border: none;
+    box-shadow: none;
+  }
+}
